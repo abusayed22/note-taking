@@ -2,7 +2,7 @@ import { useState } from "react";
 import AddStu from "./components/home/AddStu";
 
 function App() {
-  const [student,setStudent] = useState('');
+  const [student,setStudent] = useState(' ');
     const [allStudents,setAllStudents] = useState([]);
     const [editMode,setEditMode] = useState(false);
     const [editable,setEditable] = useState(null);

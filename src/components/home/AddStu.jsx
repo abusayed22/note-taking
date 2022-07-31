@@ -13,7 +13,8 @@ function AddStu(props) {
         props.setAllStudents([...props.allStudents,newAllStudents])
         props.setStudent(" ")
         if(props.student == ' ') {
-            alert("pleas type student's name in input")
+            alert("please type student's name in input")
+            return 
         }
     } 
 
@@ -29,6 +30,11 @@ function AddStu(props) {
         props.setStudent(" ")
         props.setEditMode(false)
         console.log(props.editable.id);
+        
+        if(props.student == ' ') {
+            alert("please type student's name in input")
+            return 
+        }
     }
 
 
